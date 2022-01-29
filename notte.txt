@@ -2,10 +2,29 @@ truffle unbox chainskills/chainskills-box
 truffle migrate --network ganache
 truffle migrate --complie-all --reset --network ganache
 truffle migrate --compile-all --reset --network chainskills
-truufle console --network ganache
+truffle console --network ganache
 truffle test --network ganache
 *ganache dc khai bao trong truffle.js
 npm install
 
 >https://ethereum.stackexchange.com/questions/21017/truffle-microsoft-jscript-runtime-error
 
+deploy
+
+Mac and linux:
+ rm -rf node_modules
+ rm -rf build
+
+Windown:
+ del  node_modules
+ del  build
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/tamnguyendd/chainlist-truffle.git
+git push -u origin master
+
+truffle migrate --complie-all --reset --network ganache
+
+deployfronend.cmd
